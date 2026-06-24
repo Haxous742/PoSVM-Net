@@ -1,0 +1,1249 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jun 11 11:51:52 2026
+# Process ID: 2725486
+# Current directory: /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/top.vds
+# Journal file: /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/vivado.jou
+# Running On: ihs06, OS: Linux, CPU Frequency: 5478.502 MHz, CPU Physical cores: 32, Host memory: 32738 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/home/ihs06/.Xilinx/Vivado/2023.1/Vivado_init.tcl'
+SynthPilot Server: Port 9999 busy, using port 10000 instead
+SynthPilot Server: Ready on port 10000
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2725509
+WARNING: [Synth 8-11067] parameter 'OPCODE_SYSTEM' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:37]
+WARNING: [Synth 8-11067] parameter 'OPCODE_FENCE' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:38]
+WARNING: [Synth 8-11067] parameter 'OPCODE_OP' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:39]
+WARNING: [Synth 8-11067] parameter 'OPCODE_OPIMM' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:40]
+WARNING: [Synth 8-11067] parameter 'OPCODE_STORE' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:41]
+WARNING: [Synth 8-11067] parameter 'OPCODE_LOAD' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:42]
+WARNING: [Synth 8-11067] parameter 'OPCODE_BRANCH' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:43]
+WARNING: [Synth 8-11067] parameter 'OPCODE_JALR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:44]
+WARNING: [Synth 8-11067] parameter 'OPCODE_JAL' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:45]
+WARNING: [Synth 8-11067] parameter 'OPCODE_AUIPC' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:46]
+WARNING: [Synth 8-11067] parameter 'OPCODE_LUI' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:47]
+WARNING: [Synth 8-11067] parameter 'OPCODE_HDC' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:50]
+WARNING: [Synth 8-11067] parameter 'OPCODE_LOAD_POST' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:57]
+WARNING: [Synth 8-11067] parameter 'OPCODE_STORE_POST' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:58]
+WARNING: [Synth 8-11067] parameter 'OPCODE_PULP_OP' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:59]
+WARNING: [Synth 8-11067] parameter 'OPCODE_VECOP' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:60]
+WARNING: [Synth 8-11067] parameter 'OPCODE_HWLOOP' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:61]
+WARNING: [Synth 8-11067] parameter 'REGC_S1' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:63]
+WARNING: [Synth 8-11067] parameter 'REGC_RD' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:64]
+WARNING: [Synth 8-11067] parameter 'REGC_ZERO' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:65]
+WARNING: [Synth 8-11067] parameter 'ALU_OP_WIDTH' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:77]
+WARNING: [Synth 8-11067] parameter 'ALU_ADD' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:79]
+WARNING: [Synth 8-11067] parameter 'ALU_SUB' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:80]
+WARNING: [Synth 8-11067] parameter 'ALU_ADDU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:81]
+WARNING: [Synth 8-11067] parameter 'ALU_SUBU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:82]
+WARNING: [Synth 8-11067] parameter 'ALU_ADDR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:83]
+WARNING: [Synth 8-11067] parameter 'ALU_SUBR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:84]
+WARNING: [Synth 8-11067] parameter 'ALU_ADDUR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:85]
+WARNING: [Synth 8-11067] parameter 'ALU_SUBUR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:86]
+WARNING: [Synth 8-11067] parameter 'ALU_XOR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:88]
+WARNING: [Synth 8-11067] parameter 'ALU_OR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:89]
+WARNING: [Synth 8-11067] parameter 'ALU_AND' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:90]
+WARNING: [Synth 8-11067] parameter 'ALU_SRA' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:93]
+WARNING: [Synth 8-11067] parameter 'ALU_SRL' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:94]
+WARNING: [Synth 8-11067] parameter 'ALU_ROR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:95]
+WARNING: [Synth 8-11067] parameter 'ALU_SLL' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:96]
+WARNING: [Synth 8-11067] parameter 'ALU_BEXT' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:99]
+WARNING: [Synth 8-11067] parameter 'ALU_BEXTU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:100]
+WARNING: [Synth 8-11067] parameter 'ALU_BINS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:101]
+WARNING: [Synth 8-11067] parameter 'ALU_BCLR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:102]
+WARNING: [Synth 8-11067] parameter 'ALU_BSET' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:103]
+WARNING: [Synth 8-11067] parameter 'ALU_FF1' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:106]
+WARNING: [Synth 8-11067] parameter 'ALU_FL1' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:107]
+WARNING: [Synth 8-11067] parameter 'ALU_CNT' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:108]
+WARNING: [Synth 8-11067] parameter 'ALU_CLB' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:109]
+WARNING: [Synth 8-11067] parameter 'ALU_EXTS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:112]
+WARNING: [Synth 8-11067] parameter 'ALU_EXT' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:113]
+WARNING: [Synth 8-11067] parameter 'ALU_LTS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:116]
+WARNING: [Synth 8-11067] parameter 'ALU_LTU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:117]
+WARNING: [Synth 8-11067] parameter 'ALU_LES' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:118]
+WARNING: [Synth 8-11067] parameter 'ALU_LEU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:119]
+WARNING: [Synth 8-11067] parameter 'ALU_GTS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:120]
+WARNING: [Synth 8-11067] parameter 'ALU_GTU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:121]
+WARNING: [Synth 8-11067] parameter 'ALU_GES' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:122]
+WARNING: [Synth 8-11067] parameter 'ALU_GEU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:123]
+WARNING: [Synth 8-11067] parameter 'ALU_EQ' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:124]
+WARNING: [Synth 8-11067] parameter 'ALU_NE' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:125]
+WARNING: [Synth 8-11067] parameter 'ALU_SLTS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:128]
+WARNING: [Synth 8-11067] parameter 'ALU_SLTU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:129]
+WARNING: [Synth 8-11067] parameter 'ALU_SLETS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:130]
+WARNING: [Synth 8-11067] parameter 'ALU_SLETU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:131]
+WARNING: [Synth 8-11067] parameter 'ALU_ABS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:134]
+WARNING: [Synth 8-11067] parameter 'ALU_CLIP' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:135]
+WARNING: [Synth 8-11067] parameter 'ALU_CLIPU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:136]
+WARNING: [Synth 8-11067] parameter 'ALU_INS' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:139]
+WARNING: [Synth 8-11067] parameter 'ALU_MIN' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:142]
+WARNING: [Synth 8-11067] parameter 'ALU_MINU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:143]
+WARNING: [Synth 8-11067] parameter 'ALU_MAX' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:144]
+WARNING: [Synth 8-11067] parameter 'ALU_MAXU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:145]
+WARNING: [Synth 8-11067] parameter 'ALU_DIVU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:148]
+WARNING: [Synth 8-11067] parameter 'ALU_DIV' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:149]
+WARNING: [Synth 8-11067] parameter 'ALU_REMU' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:150]
+WARNING: [Synth 8-11067] parameter 'ALU_REM' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:151]
+WARNING: [Synth 8-11067] parameter 'ALU_SHUF' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:153]
+WARNING: [Synth 8-11067] parameter 'ALU_SHUF2' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:154]
+WARNING: [Synth 8-11067] parameter 'ALU_PCKLO' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:155]
+WARNING: [Synth 8-11067] parameter 'ALU_PCKHI' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:156]
+WARNING: [Synth 8-11067] parameter 'MUL_MAC32' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:159]
+WARNING: [Synth 8-11067] parameter 'MUL_MSU32' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:160]
+WARNING: [Synth 8-11067] parameter 'MUL_I' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:161]
+WARNING: [Synth 8-11067] parameter 'MUL_IR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:162]
+WARNING: [Synth 8-11067] parameter 'MUL_DOT8' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:163]
+WARNING: [Synth 8-11067] parameter 'MUL_DOT16' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:164]
+WARNING: [Synth 8-11067] parameter 'MUL_H' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:165]
+WARNING: [Synth 8-11067] parameter 'VEC_MODE32' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:168]
+WARNING: [Synth 8-11067] parameter 'VEC_MODE16' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:169]
+WARNING: [Synth 8-11067] parameter 'VEC_MODE8' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:170]
+WARNING: [Synth 8-11067] parameter 'CSR_OP_NONE' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:183]
+WARNING: [Synth 8-11067] parameter 'CSR_OP_WRITE' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:184]
+WARNING: [Synth 8-11067] parameter 'CSR_OP_SET' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:185]
+WARNING: [Synth 8-11067] parameter 'CSR_OP_CLEAR' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:186]
+WARNING: [Synth 8-11067] parameter 'SP_DVR0' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:190]
+WARNING: [Synth 8-11067] parameter 'SP_DCR0' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:191]
+WARNING: [Synth 8-11067] parameter 'SP_DMR1' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:192]
+WARNING: [Synth 8-11067] parameter 'SP_DMR2' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:193]
+WARNING: [Synth 8-11067] parameter 'SP_DVR_MSB' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:195]
+WARNING: [Synth 8-11067] parameter 'SP_DCR_MSB' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:196]
+WARNING: [Synth 8-11067] parameter 'SP_DMR_MSB' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:197]
+WARNING: [Synth 8-11067] parameter 'SP_DSR_MSB' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:198]
+WARNING: [Synth 8-11067] parameter 'SEL_REGFILE' declared inside package 'riscv_defines' shall be treated as localparam [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv:211]
+INFO: [Common 17-14] Message 'Synth 8-11067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-9339] data object 'start' is already declared [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:80]
+INFO: [Synth 8-6826] previous declaration of 'start' is from here [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:79]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'start' is ignored [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:80]
+CRITICAL WARNING: [Synth 8-9339] data object 'done' is already declared [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:80]
+INFO: [Synth 8-6826] previous declaration of 'done' is from here [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:79]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'done' is ignored [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:80]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'in1' is not allowed [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:164]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'in2' is not allowed [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:164]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'out' is not allowed [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:164]
+WARNING: [Synth 8-11065] parameter 'Bs' becomes localparam in 'posit_mac' with formal parameter declaration list [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:146]
+WARNING: [Synth 8-11065] parameter 'Bs' becomes localparam in 'posit_mult' with formal parameter declaration list [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:201]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2053.285 ; gain = 377.801 ; free physical = 5017 ; free virtual = 282091
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'riscv_core' [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_core.sv:31]
+	Parameter INSTR_RDATA_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cluster_clock_gating' [/home/ihs06/cnn_svm_hybrid/Reference_data/cluster_clock_gating.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'cluster_clock_gating' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/cluster_clock_gating.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'riscv_if_stage' [/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv:31]
+	Parameter N_HWLP bound to: 2 - type: integer 
+	Parameter RDATA_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'riscv_prefetch_L0_buffer' [/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'prefetch_L0_buffer_L0' [/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv:583]
+	Parameter RDATA_IN_WIDTH bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'prefetch_L0_buffer_L0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv:583]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv:221]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_prefetch_L0_buffer' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv:26]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv:124]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv:124]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv:140]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv:238]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv:238]
+INFO: [Synth 8-6157] synthesizing module 'riscv_hwloop_controller' [/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_controller.sv:25]
+	Parameter N_REGS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'riscv_hwloop_controller' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_controller.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'riscv_compressed_decoder' [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:26]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:48]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:51]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:76]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:76]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:110]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:126]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:174]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_compressed_decoder' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_if_stage' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv:31]
+INFO: [Synth 8-6157] synthesizing module 'riscv_id_stage' [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:37]
+	Parameter N_HWLP bound to: 2 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:411]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:510]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:535]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:546]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:546]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:578]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:677]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:677]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:685]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:685]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:699]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:699]
+INFO: [Synth 8-6157] synthesizing module 'riscv_register_file' [/home/ihs06/cnn_svm_hybrid/Reference_data/register_file_ff.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_register_file' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/register_file_ff.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'riscv_decoder' [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:29]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:195]
+WARNING: [Synth 8-151] case item 7'b0001011 is unreachable [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:195]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:268]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:268]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:333]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:368]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:385]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:440]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:440]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:478]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:509]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:645]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:741]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:868]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:915]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:938]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_decoder' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'riscv_controller' [/home/ihs06/cnn_svm_hybrid/Reference_data/controller.sv:29]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/controller.sv:191]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_controller' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/controller.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'riscv_exc_controller' [/home/ihs06/cnn_svm_hybrid/Reference_data/exc_controller.sv:27]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/exc_controller.sv:169]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/exc_controller.sv:169]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_exc_controller' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/exc_controller.sv:27]
+INFO: [Synth 8-6157] synthesizing module 'riscv_hwloop_regs' [/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_regs.sv:25]
+	Parameter N_REGS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'riscv_hwloop_regs' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_regs.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_id_stage' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv:37]
+INFO: [Synth 8-6157] synthesizing module 'riscv_ex_stage' [/home/ihs06/cnn_svm_hybrid/Reference_data/ex_stage.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'riscv_alu' [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:28]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:133]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:147]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:334]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:406]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:481]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:514]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:533]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:536]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:536]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:572]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:575]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:596]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:617]
+INFO: [Synth 8-6157] synthesizing module 'alu_popcnt' [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:1005]
+INFO: [Synth 8-6155] done synthesizing module 'alu_popcnt' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:1005]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:718]
+INFO: [Synth 8-6157] synthesizing module 'alu_ff' [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:929]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ff' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:929]
+INFO: [Synth 8-6157] synthesizing module 'riscv_alu_div' [/home/ihs06/cnn_svm_hybrid/Reference_data/alu_div.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_alu_div' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/alu_div.sv:26]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:867]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_alu' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv:28]
+INFO: [Synth 8-6157] synthesizing module 'riscv_mult' [/home/ihs06/cnn_svm_hybrid/Reference_data/mult.sv:28]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/mult.sv:127]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/mult.sv:270]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_mult' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/mult.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_ex_stage' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/ex_stage.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'riscv_load_store_unit' [/home/ihs06/cnn_svm_hybrid/Reference_data/load_store_unit.sv:27]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/load_store_unit.sv:345]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/load_store_unit.sv:447]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_load_store_unit' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/load_store_unit.sv:27]
+INFO: [Synth 8-6157] synthesizing module 'riscv_cs_registers' [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:34]
+	Parameter N_EXT_CNT bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:155]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:198]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:251]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:251]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:346]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:390]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:429]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:438]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_cs_registers' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'riscv_debug_unit' [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:25]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:161]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:165]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:199]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:232]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:273]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:303]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:303]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:321]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:353]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:421]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_debug_unit' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_core' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_core.sv:31]
+WARNING: [Synth 8-689] width (18) of port connection 'instr_addr_o' does not match port width (32) of module 'riscv_core' [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:92]
+WARNING: [Synth 8-689] width (18) of port connection 'data_addr_o' does not match port width (32) of module 'riscv_core' [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:98]
+INFO: [Synth 8-6157] synthesizing module 'instr_bram' [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/.Xil/Vivado-2725486-ihs06/realtime/instr_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'instr_bram' (0#1) [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/.Xil/Vivado-2725486-ihs06/realtime/instr_bram_stub.v:6]
+WARNING: [Synth 8-7071] port 'wea' of module 'instr_bram' is unconnected for instance 'u_instr_mem' [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:150]
+WARNING: [Synth 8-7071] port 'dina' of module 'instr_bram' is unconnected for instance 'u_instr_mem' [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:150]
+WARNING: [Synth 8-7023] instance 'u_instr_mem' of module 'instr_bram' has 6 connections declared, but only 4 given [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:150]
+INFO: [Synth 8-6157] synthesizing module 'ram' [/home/ihs06/cnn_svm_hybrid/Reference_data/ram.sv:26]
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dp_ram' [/home/ihs06/cnn_svm_hybrid/Reference_data/dp_ram.sv:3]
+	Parameter ADDR_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dp_ram' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/dp_ram.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/ram.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'gemm_top' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_top.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'gemm_controller' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_controller.sv:3]
+INFO: [Synth 8-226] default block is never used [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_controller.sv:75]
+INFO: [Synth 8-6155] done synthesizing module 'gemm_controller' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'matrix_a_bram' [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/.Xil/Vivado-2725486-ihs06/realtime/matrix_a_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_a_bram' (0#1) [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/.Xil/Vivado-2725486-ihs06/realtime/matrix_a_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'matrix_b_bram' [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/.Xil/Vivado-2725486-ihs06/realtime/matrix_b_bram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_b_bram' (0#1) [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/.Xil/Vivado-2725486-ihs06/realtime/matrix_b_bram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'posit_mac' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:133]
+	Parameter N bound to: 16 - type: integer 
+	Parameter es bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'posit_mult' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:199]
+	Parameter N bound to: 16 - type: integer 
+	Parameter es bound to: 2 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:478]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+INFO: [Synth 8-6157] synthesizing module 'data_extract_v1' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:474]
+	Parameter N bound to: 16 - type: integer 
+	Parameter es bound to: 2 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:655]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+INFO: [Synth 8-6157] synthesizing module 'LOD_N' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:650]
+	Parameter N bound to: 16 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6157] synthesizing module 'LOD' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+	Parameter N bound to: 16 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+	Parameter N bound to: 8 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized1' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized2' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+	Parameter N bound to: 2 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized2' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized1' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6155] done synthesizing module 'LOD' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:655]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+INFO: [Synth 8-6155] done synthesizing module 'LOD_N' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:650]
+INFO: [Synth 8-6157] synthesizing module 'DSR_left_N_S' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:607]
+	Parameter N bound to: 16 - type: integer 
+	Parameter S bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DSR_left_N_S' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:607]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:478]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+INFO: [Synth 8-6155] done synthesizing module 'data_extract_v1' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:478]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:478]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:480]
+INFO: [Synth 8-6157] synthesizing module 'add_N_Cin' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:534]
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add_N_Cin' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:534]
+INFO: [Synth 8-6157] synthesizing module 'sub_N' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:513]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sub_N_in' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:544]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sub_N_in' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:544]
+INFO: [Synth 8-6155] done synthesizing module 'sub_N' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:513]
+INFO: [Synth 8-6157] synthesizing module 'add_sub_N' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:560]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'add_N' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:523]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'add_N_in' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:552]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add_N_in' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:552]
+INFO: [Synth 8-6155] done synthesizing module 'add_N' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:523]
+INFO: [Synth 8-6157] synthesizing module 'sub_N__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:513]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sub_N_in__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:544]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sub_N_in__parameterized0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:544]
+INFO: [Synth 8-6155] done synthesizing module 'sub_N__parameterized0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:513]
+INFO: [Synth 8-6155] done synthesizing module 'add_sub_N' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:560]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:655]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:657]
+INFO: [Synth 8-6157] synthesizing module 'LOD_N__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:650]
+	Parameter N bound to: 29 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized3' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+	Parameter N bound to: 29 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Synth 8-6157] synthesizing module 'LOD__parameterized4' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+	Parameter N bound to: 32 - type: integer 
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:676]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:678]
+INFO: [Common 17-14] Message 'Synth 8-6104' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized4' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+INFO: [Synth 8-6155] done synthesizing module 'LOD__parameterized3' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:671]
+INFO: [Synth 8-6155] done synthesizing module 'LOD_N__parameterized0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:650]
+WARNING: [Synth 8-689] width (4) of port connection 'out' does not match port width (5) of module 'LOD_N__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:404]
+INFO: [Synth 8-6157] synthesizing module 'DSR_left_N_S__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:607]
+	Parameter N bound to: 29 - type: integer 
+	Parameter S bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DSR_left_N_S__parameterized0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:607]
+INFO: [Synth 8-6157] synthesizing module 'add_1' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:573]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add_1' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:573]
+INFO: [Synth 8-6157] synthesizing module 'reg_exp_op' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:591]
+	Parameter es bound to: 2 - type: integer 
+	Parameter Bs bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'conv_2c' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:584]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'conv_2c' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:584]
+INFO: [Synth 8-6155] done synthesizing module 'reg_exp_op' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:591]
+INFO: [Synth 8-6157] synthesizing module 'DSR_right_N_S' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:628]
+	Parameter N bound to: 51 - type: integer 
+	Parameter S bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DSR_right_N_S' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:628]
+INFO: [Synth 8-6157] synthesizing module 'add_N__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:523]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'add_N_in__parameterized0' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:552]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add_N_in__parameterized0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:552]
+INFO: [Synth 8-6155] done synthesizing module 'add_N__parameterized0' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:523]
+INFO: [Synth 8-6155] done synthesizing module 'posit_mult' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:199]
+INFO: [Synth 8-6155] done synthesizing module 'posit_mac' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:133]
+INFO: [Synth 8-6155] done synthesizing module 'gemm_top' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_top.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:17]
+WARNING: [Synth 8-3848] Net add_done in module/entity posit_mac does not have driver. [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:151]
+WARNING: [Synth 8-6014] Unused sequential element debug_cnt_reg was removed.  [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_top.sv:63]
+WARNING: [Synth 8-7129] Port in[15] in module data_extract_v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module posit_mult is either unconnected or has no load
+WARNING: [Synth 8-7129] Port done in module posit_mac is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_a_i[1] in module dp_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_a_i[0] in module dp_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_b_i[1] in module dp_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_b_i[0] in module dp_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_counters_i[-1] in module riscv_cs_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_counters_i[0] in module riscv_cs_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eret_insn_i in module riscv_exc_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rega_used_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regb_used_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regc_used_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[31] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[30] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[29] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[28] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[27] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[26] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[25] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[24] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[23] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[22] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[21] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[20] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[19] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[18] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[17] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[16] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[15] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[14] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[13] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[12] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[11] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[10] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[9] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[8] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[7] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[6] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[5] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[4] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[3] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[2] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[1] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[0] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_ex_i[4] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_ex_i[3] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_ex_i[2] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_ex_i[1] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_ex_i[0] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_wb_i[4] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_wb_i[3] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_wb_i[2] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_wb_i[1] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_waddr_wb_i[0] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_alu_waddr_fw_i[4] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_alu_waddr_fw_i[3] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_alu_waddr_fw_i[2] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_alu_waddr_fw_i[1] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regfile_alu_waddr_fw_i[0] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_valid_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_valid_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port test_en_i in module riscv_register_file is either unconnected or has no load
+WARNING: [Synth 8-7129] Port if_ready_i in module riscv_id_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port req_i in module riscv_prefetch_L0_buffer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[7] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[6] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[5] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[4] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[3] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[2] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[1] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port boot_addr_i[0] in module riscv_if_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dbg_jump_req_i in module riscv_if_stage is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2213.191 ; gain = 537.707 ; free physical = 4820 ; free virtual = 281897
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2213.191 ; gain = 537.707 ; free physical = 4820 ; free virtual = 281896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2213.191 ; gain = 537.707 ; free physical = 4820 ; free virtual = 281896
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2213.191 ; gain = 0.000 ; free physical = 4820 ; free virtual = 281896
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/instr_bram/instr_bram/instr_bram_in_context.xdc] for cell 'u_instr_mem'
+Finished Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/instr_bram/instr_bram/instr_bram_in_context.xdc] for cell 'u_instr_mem'
+Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_b_bram/matrix_b_bram/matrix_b_bram_in_context.xdc] for cell 'gemm_top_i/u_matrix_b'
+Finished Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_b_bram/matrix_b_bram/matrix_b_bram_in_context.xdc] for cell 'gemm_top_i/u_matrix_b'
+Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_a_bram/matrix_a_bram/matrix_a_bram_in_context.xdc] for cell 'gemm_top_i/u_matrix_a'
+Finished Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_a_bram/matrix_a_bram/matrix_a_bram_in_context.xdc] for cell 'gemm_top_i/u_matrix_a'
+Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/constrs_1/new/timing.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/constrs_1/new/timing.xdc:1]
+Finished Parsing XDC File [/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/constrs_1/new/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2336.035 ; gain = 0.000 ; free physical = 4817 ; free virtual = 281893
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2336.035 ; gain = 0.000 ; free physical = 4817 ; free virtual = 281893
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2336.035 ; gain = 660.551 ; free physical = 4817 ; free virtual = 281893
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2336.035 ; gain = 660.551 ; free physical = 4817 ; free virtual = 281893
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_instr_mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gemm_top_i/u_matrix_b. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gemm_top_i/u_matrix_a. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2336.035 ; gain = 660.551 ; free physical = 4817 ; free virtual = 281893
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'prefetch_L0_buffer_L0'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_fsm_cs_reg' in module 'riscv_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'State_SP_reg' in module 'riscv_alu_div'
+INFO: [Synth 8-802] inferred FSM for state register 'mulh_CS_reg' in module 'riscv_mult'
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'riscv_load_store_unit'
+INFO: [Synth 8-802] inferred FSM for state register 'stall_cs_reg' in module 'riscv_debug_unit'
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'gemm_controller'
+WARNING: [Synth 8-327] inferring latch for variable 'clk_en_reg' [/home/ihs06/cnn_svm_hybrid/Reference_data/cluster_clock_gating.sv:20]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   EMPTY |                              000 |                              000
+                WAIT_GNT |                              001 |                              010
+             WAIT_RVALID |                              010 |                              011
+          ABORTED_BRANCH |                              011 |                              100
+                VALID_L0 |                              100 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'prefetch_L0_buffer_L0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                             0000 |                             0000
+                BOOT_SET |                             0001 |                             0001
+              DBG_SIGNAL |                             0010 |                             0111
+                DBG_WAIT |                             0011 |                             1001
+                  DECODE |                             0100 |                             0100
+                FLUSH_EX |                             0101 |                             0101
+                FLUSH_WB |                             0110 |                             0110
+                   SLEEP |                             0111 |                             0010
+        DBG_SIGNAL_SLEEP |                             1000 |                             1000
+          DBG_WAIT_SLEEP |                             1001 |                             1011
+             FIRST_FETCH |                             1010 |                             0011
+         DBG_WAIT_BRANCH |                             1011 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_fsm_cs_reg' using encoding 'sequential' in module 'riscv_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                  DIVIDE |                              010 |                               01
+                  FINISH |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_SP_reg' using encoding 'one-hot' in module 'riscv_alu_div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   STEP0 |                              001 |                              001
+                   STEP1 |                              010 |                              010
+                   STEP2 |                              011 |                              011
+                  FINISH |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mulh_CS_reg' using encoding 'sequential' in module 'riscv_mult'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+    WAIT_RVALID_EX_STALL |                               01 |                               10
+           IDLE_EX_STALL |                               10 |                               11
+             WAIT_RVALID |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'riscv_load_store_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RUNNING |                              001 |                               00
+                HALT_REQ |                              010 |                               01
+                    HALT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stall_cs_reg' using encoding 'one-hot' in module 'riscv_debug_unit'
+WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-3971] The signal "dp_ram:/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                  STREAM |                               11 |                               01
+                   DRAIN |                               10 |                               10
+                    DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'sequential' in module 'gemm_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2336.035 ; gain = 660.551 ; free physical = 4820 ; free virtual = 281898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   36 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 12    
+	   3 Input   32 Bit       Adders := 1     
+	   5 Input   32 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 4     
+	   3 Input   30 Bit       Adders := 4     
+	   2 Input   17 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 17    
+	   3 Input    9 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 4     
+	   3 Input    8 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 16    
+	   2 Input    5 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 17    
+	   2 Input    3 Bit       Adders := 8     
+	   2 Input    2 Bit       Adders := 16    
+	   3 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	               32 Bit    Registers := 65    
+	               16 Bit    Registers := 12    
+	               15 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 42    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	            2048K Bit	(65536 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   51 Bit        Muxes := 20    
+	   2 Input   36 Bit        Muxes := 6     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 150   
+	   5 Input   32 Bit        Muxes := 9     
+	   4 Input   32 Bit        Muxes := 32    
+	   3 Input   32 Bit        Muxes := 3     
+	  15 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 4     
+	   2 Input   29 Bit        Muxes := 40    
+	   5 Input   29 Bit        Muxes := 8     
+	   2 Input   27 Bit        Muxes := 4     
+	   5 Input   17 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 87    
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 12    
+	   2 Input   12 Bit        Muxes := 2     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 54    
+	   5 Input    8 Bit        Muxes := 8     
+	  10 Input    6 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 31    
+	   4 Input    6 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 20    
+	   4 Input    5 Bit        Muxes := 3     
+	   8 Input    5 Bit        Muxes := 1     
+	   9 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 83    
+	   3 Input    4 Bit        Muxes := 9     
+	   7 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 4     
+	   8 Input    4 Bit        Muxes := 2     
+	  40 Input    4 Bit        Muxes := 2     
+	  16 Input    4 Bit        Muxes := 1     
+	  29 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 4     
+	  15 Input    4 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 68    
+	  16 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 2     
+	  40 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 4     
+	   7 Input    3 Bit        Muxes := 2     
+	  12 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	  13 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 144   
+	  15 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 11    
+	  40 Input    2 Bit        Muxes := 8     
+	  16 Input    2 Bit        Muxes := 13    
+	   8 Input    2 Bit        Muxes := 1     
+	  45 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 11    
+	   5 Input    2 Bit        Muxes := 4     
+	   6 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 259   
+	   5 Input    1 Bit        Muxes := 18    
+	  15 Input    1 Bit        Muxes := 17    
+	   3 Input    1 Bit        Muxes := 12    
+	   6 Input    1 Bit        Muxes := 6     
+	   7 Input    1 Bit        Muxes := 5     
+	   8 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 30    
+	  10 Input    1 Bit        Muxes := 1     
+	  45 Input    1 Bit        Muxes := 2     
+	  40 Input    1 Bit        Muxes := 6     
+	   9 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 24    
+	  39 Input    1 Bit        Muxes := 2     
+	  17 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 13    
+	  11 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mult_i/short_mac1, operation Mode is: A*B.
+DSP Report: operator mult_i/short_mac1 is absorbed into DSP mult_i/short_mac1.
+DSP Report: Generating DSP mult_i/short_mac, operation Mode is: PCIN+A:B+C.
+DSP Report: operator mult_i/short_mac is absorbed into DSP mult_i/short_mac.
+DSP Report: Generating DSP mult_i/, operation Mode is: A*B.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: Generating DSP mult_i/, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: Generating DSP mult_i/, operation Mode is: A*B.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: Generating DSP mult_i/, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: operator mult_i/ is absorbed into DSP mult_i/.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP mult_m_unshifted, operation Mode is: A*B.
+DSP Report: operator mult_m_unshifted is absorbed into DSP mult_m_unshifted.
+DSP Report: Generating DSP mult_m_unshifted, operation Mode is: A*B.
+DSP Report: operator mult_m_unshifted is absorbed into DSP mult_m_unshifted.
+DSP Report: Generating DSP mult_m_unshifted, operation Mode is: A*B.
+DSP Report: operator mult_m_unshifted is absorbed into DSP mult_m_unshifted.
+DSP Report: Generating DSP mult_m_unshifted, operation Mode is: A*B.
+DSP Report: operator mult_m_unshifted is absorbed into DSP mult_m_unshifted.
+WARNING: [Synth 8-7129] Port in[15] in module data_extract_v1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module posit_mult is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[15] in module data_extract_v1__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module posit_mult__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[15] in module data_extract_v1__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module posit_mult__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[15] in module data_extract_v1__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module posit_mult__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_counters_i[-1] in module riscv_cs_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_counters_i[0] in module riscv_cs_registers is either unconnected or has no load
+WARNING: [Synth 8-7129] Port eret_insn_i in module riscv_exc_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rega_used_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regb_used_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regc_used_i in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[31] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[30] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[29] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[28] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[27] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[26] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[25] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[24] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[23] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[22] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[21] in module riscv_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr_rdata_i[20] in module riscv_controller is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6841] Block RAM (ram_i/dp_ram_i/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-3971] The signal "top/ram_i/dp_ram_i/mem_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (core_clock_gate_i/clk_en_reg) is unused and will be removed from module riscv_core.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 2570.949 ; gain = 895.465 ; free physical = 4541 ; free virtual = 281633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+----------------+---------------+----------------+
+|Module Name   | RTL Object     | Depth x Width | Implemented As | 
++--------------+----------------+---------------+----------------+
+|riscv_decoder | alu_operator_o | 256x6         | LUT            | 
+|riscv_decoder | alu_operator_o | 64x6          | LUT            | 
+|riscv_decoder | alu_operator_o | 256x6         | LUT            | 
+|riscv_decoder | alu_operator_o | 64x6          | LUT            | 
++--------------+----------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | ram_i/dp_ram_i/mem_reg | 64 K x 32(READ_FIRST)  | W | R | 64 K x 32(READ_FIRST)  | W |   | Port A and B     | 0      | 64     | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|riscv_mult     | A*B            | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | PCIN+A:B+C     | 14     | 18     | 33     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_mult     | A*B            | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|posit_mult     | A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|posit_mult     | A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|posit_mult     | A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|posit_mult     | A*B            | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 2570.949 ; gain = 895.465 ; free physical = 4541 ; free virtual = 281633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:44 ; elapsed = 00:01:46 . Memory (MB): peak = 2624.645 ; gain = 949.160 ; free physical = 4491 ; free virtual = 281584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | ram_i/dp_ram_i/mem_reg | 64 K x 32(READ_FIRST)  | W | R | 64 K x 32(READ_FIRST)  | W |   | Port A and B     | 0      | 64     | 
++------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_0_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_1_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_2_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ram_i/dp_ram_i/mem_reg_3_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[127]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[126]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[125]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[124]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[123]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[122]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[121]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[120]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[119]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[118]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[117]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[116]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[115]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[114]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[113]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[112]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[111]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[110]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[109]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[108]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[107]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[106]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[105]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[104]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[103]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[102]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[101]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[100]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[99]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[98]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[97]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[96]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[95]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[94]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[93]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[92]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[91]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[90]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[89]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[88]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[87]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[86]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[85]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[84]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[83]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[82]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[81]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[80]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[79]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[78]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[77]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[76]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[75]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[74]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[73]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[72]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[71]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[70]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[69]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[68]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[67]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[66]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[65]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[64]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[63]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[62]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[61]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[60]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[59]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[58]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[57]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[56]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[55]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[54]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[53]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[52]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[51]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[50]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[49]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[48]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[47]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[46]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[45]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[44]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[43]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[42]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[41]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[40]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[39]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[38]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[37]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[36]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[35]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[34]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[33]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[32]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module u_instr_mem has unconnected pin dina[29]
+INFO: [Common 17-14] Message 'Synth 8-4442' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|posit_mult     | A*B          | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|posit_mult     | A*B          | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|posit_mult     | A*B          | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|posit_mult     | A*B          | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_mult     | A*B          | 30     | 18     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_mult     | A*B          | 30     | 18     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | PCIN+A:B+C   | 13     | 18     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|riscv_ex_stage | PCIN>>17+A*B | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |instr_bram    |         1|
+|2     |matrix_a_bram |         1|
+|3     |matrix_b_bram |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |instr_bram    |     1|
+|2     |matrix_a_bram |     1|
+|3     |matrix_b_bram |     1|
+|4     |BUFG          |     1|
+|5     |CARRY4        |   376|
+|6     |DSP48E1       |    10|
+|8     |LUT1          |   237|
+|9     |LUT2          |   477|
+|10    |LUT3          |  1295|
+|11    |LUT4          |  1049|
+|12    |LUT5          |  2878|
+|13    |LUT6          |  4488|
+|14    |MUXF7         |   468|
+|15    |RAMB36E1      |    64|
+|17    |FDCE          |  2403|
+|18    |FDPE          |    13|
+|19    |FDRE          |    34|
+|20    |IBUF          |    82|
+|21    |OBUF          |    41|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 2694.645 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 129 critical warnings and 80 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 2694.645 ; gain = 896.316 ; free physical = 4428 ; free virtual = 281521
+Synthesis Optimization Complete : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 2694.652 ; gain = 1019.160 ; free physical = 4428 ; free virtual = 281521
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2694.652 ; gain = 0.000 ; free physical = 4696 ; free virtual = 281789
+INFO: [Netlist 29-17] Analyzing 918 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2726.660 ; gain = 0.000 ; free physical = 4697 ; free virtual = 281790
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: cb3193b2
+INFO: [Common 17-83] Releasing license: Synthesis
+270 Infos, 319 Warnings, 104 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:56 ; elapsed = 00:01:56 . Memory (MB): peak = 2726.660 ; gain = 1383.895 ; free physical = 4697 ; free virtual = 281790
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2334.131; main = 2006.114; forked = 374.649
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3672.734; main = 2726.664; forked = 978.086
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 11 11:53:53 2026...

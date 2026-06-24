@@ -1,0 +1,146 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt off -L xil_defaultlib -L blk_mem_gen_v8_4_6 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Turned off multi-threading.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 18 differs from formal bit length 32 for port 'instr_addr_o' [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:92]
+WARNING: [VRFC 10-3091] actual bit length 18 differs from formal bit length 32 for port 'data_addr_o' [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:98]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'out' [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:404]
+WARNING: [VRFC 10-5021] port 'wea' is not connected on this instance [/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv:150]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/sim_1/new/tb_top.sv" Line 3. Module tb_top has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv" Line 17. Module top has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_core.sv" Line 31. Module riscv_core(INSTR_RDATA_WIDTH=128) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv" Line 31. Module riscv_if_stage(RDATA_WIDTH=128) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv" Line 26. Module riscv_prefetch_L0_buffer has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv" Line 583. Module prefetch_L0_buffer_L0 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_controller.sv" Line 25. Module riscv_hwloop_controller_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv" Line 37. Module riscv_id_stage_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/register_file_ff.sv" Line 23. Module riscv_register_file_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/exc_controller.sv" Line 27. Module riscv_exc_controller has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_regs.sv" Line 25. Module riscv_hwloop_regs_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/ex_stage.sv" Line 32. Module riscv_ex_stage has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/mult.sv" Line 28. Module riscv_mult has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/load_store_unit.sv" Line 27. Module riscv_load_store_unit has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/instr_bram/sim/instr_bram.v" Line 55. Module instr_bram has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_6(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=0,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="instr_bram.mif",C_INIT_FILE="instr_bram.mem",C_USE_DEFAULT_DATA=1,C_WRITE_WIDTH_A=128,C_READ_WIDTH_A=128,C_WRITE_DEPTH_A=4096,C_READ_DEPTH_A=4096,C_ADDRA_WIDTH=12,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=128,C_READ_WIDTH_B=128,C_WRITE_DEPTH_B=4096,C_READ_DEPTH_B=4096,C_ADDRB_WIDTH=12,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="14",C_COUNT_18K_BRAM="1",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____37.113496_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1951. Module blk_mem_gen_v8_4_6_mem_module(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_MEM_TYPE=0,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="instr_bram.mif",C_INIT_FILE="instr_bram.mem",C_USE_DEFAULT_DATA=1,C_WRITE_WIDTH_A=128,C_READ_WIDTH_A=128,C_WRITE_DEPTH_A=4096,C_READ_DEPTH_A=4096,C_ADDRA_WIDTH=12,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=128,C_READ_WIDTH_B=128,C_WRITE_DEPTH_B=4096,C_READ_DEPTH_B=4096,C_ADDRB_WIDTH=12,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_6_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=128,C_ADDRB_WIDTH=12,C_HAS_MEM_OUTPUT_REGS=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_6_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=128,C_ADDRB_WIDTH=12,NUM_STAGES=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1859. Module blk_mem_gen_v8_4_6_softecc_output_reg_stage(C_DATA_WIDTH=128,C_ADDRB_WIDTH=12) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/ram.sv" Line 26. Module ram(ADDR_WIDTH=18) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/dp_ram.sv" Line 13. Module dp_ram(ADDR_WIDTH=18) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_top.sv" Line 3. Module gemm_top has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_controller.sv" Line 3. Module gemm_controller has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_a_bram/sim/matrix_a_bram.v" Line 55. Module matrix_a_bram has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_6(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=0,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="matrix_a_bram.mif",C_INIT_FILE="matrix_a_bram.mem",C_USE_DEFAULT_DATA=1,C_WRITE_WIDTH_A=24,C_READ_WIDTH_A=24,C_WRITE_DEPTH_A=2048,C_READ_DEPTH_A=2048,C_ADDRA_WIDTH=11,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=24,C_READ_WIDTH_B=24,C_WRITE_DEPTH_B=2048,C_READ_DEPTH_B=2048,C_ADDRB_WIDTH=11,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="1",C_COUNT_18K_BRAM="1",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____4.0205_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1951. Module blk_mem_gen_v8_4_6_mem_module(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_MEM_TYPE=0,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="matrix_a_bram.mif",C_INIT_FILE="matrix_a_bram.mem",C_USE_DEFAULT_DATA=1,C_WRITE_WIDTH_A=24,C_READ_WIDTH_A=24,C_WRITE_DEPTH_A=2048,C_READ_DEPTH_A=2048,C_ADDRA_WIDTH=11,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=24,C_READ_WIDTH_B=24,C_WRITE_DEPTH_B=2048,C_READ_DEPTH_B=2048,C_ADDRB_WIDTH=11,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_6_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=24,C_ADDRB_WIDTH=11,C_HAS_MEM_OUTPUT_REGS=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_6_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=24,C_ADDRB_WIDTH=11,NUM_STAGES=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1859. Module blk_mem_gen_v8_4_6_softecc_output_reg_stage(C_DATA_WIDTH=24,C_ADDRB_WIDTH=11) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_b_bram/sim/matrix_b_bram.v" Line 55. Module matrix_b_bram has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 3412. Module blk_mem_gen_v8_4_6(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_ELABORATION_DIR="./",C_AXI_TYPE=1,C_MEM_TYPE=0,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="matrix_b_bram.mif",C_INIT_FILE="matrix_b_bram.mem",C_USE_DEFAULT_DATA=1,C_WRITE_WIDTH_A=24,C_READ_WIDTH_A=24,C_WRITE_DEPTH_A=16384,C_READ_DEPTH_A=16384,C_ADDRA_WIDTH=14,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=24,C_READ_WIDTH_B=24,C_WRITE_DEPTH_B=16384,C_READ_DEPTH_B=16384,C_ADDRB_WIDTH=14,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0,C_COUNT_36K_BRAM="11",C_COUNT_18K_BRAM="0",C_EST_POWER_SUMMARY="Estimated_Power_for_IP_____:_____12.395549_mW") has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1951. Module blk_mem_gen_v8_4_6_mem_module(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_MEM_TYPE=0,C_PRIM_TYPE=1,C_LOAD_INIT_FILE=1,C_INIT_FILE_NAME="matrix_b_bram.mif",C_INIT_FILE="matrix_b_bram.mem",C_USE_DEFAULT_DATA=1,C_WRITE_WIDTH_A=24,C_READ_WIDTH_A=24,C_WRITE_DEPTH_A=16384,C_READ_DEPTH_A=16384,C_ADDRA_WIDTH=14,C_INITB_VAL="0",C_HAS_ENB=0,C_WRITE_WIDTH_B=24,C_READ_WIDTH_B=24,C_WRITE_DEPTH_B=16384,C_READ_DEPTH_B=16384,C_ADDRB_WIDTH=14,C_HAS_MEM_OUTPUT_REGS_A=1,C_SIM_COLLISION_CHECK="ALL",C_COMMON_CLK=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_6_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=24,C_ADDRB_WIDTH=14,C_HAS_MEM_OUTPUT_REGS=1) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1563. Module blk_mem_gen_v8_4_6_output_stage(C_FAMILY="artix7",C_XDEVICEFAMILY="artix7",C_DATA_WIDTH=24,C_ADDRB_WIDTH=14,NUM_STAGES=0) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.1/sw/continuous/3753/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 1859. Module blk_mem_gen_v8_4_6_softecc_output_reg_stage(C_DATA_WIDTH=24,C_ADDRB_WIDTH=14) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 133. Module posit_mac has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 199. Module posit_mult(N=16) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 474. Module data_extract_v1_default has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 650. Module LOD_N(N=16) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=16) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=8) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=4) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=4) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=2) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=8) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" Line 671. Module LOD(N=4) has a timescale but at least one module in design doesn't have timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4100' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.riscv_defines
+Compiling module xil_defaultlib.cluster_clock_gating
+Compiling module xil_defaultlib.prefetch_L0_buffer_L0
+Compiling module xil_defaultlib.riscv_prefetch_L0_buffer
+Compiling module xil_defaultlib.riscv_hwloop_controller_default
+Compiling module xil_defaultlib.riscv_compressed_decoder
+Compiling module xil_defaultlib.riscv_if_stage(RDATA_WIDTH=128)
+Compiling module xil_defaultlib.riscv_register_file_default
+Compiling module xil_defaultlib.riscv_decoder
+Compiling module xil_defaultlib.riscv_controller_1
+Compiling module xil_defaultlib.riscv_exc_controller
+Compiling module xil_defaultlib.riscv_hwloop_regs_default
+Compiling module xil_defaultlib.riscv_id_stage_default
+Compiling module xil_defaultlib.alu_popcnt
+Compiling module xil_defaultlib.alu_ff_default
+Compiling module xil_defaultlib.riscv_alu_div
+Compiling module xil_defaultlib.riscv_alu
+Compiling module xil_defaultlib.riscv_mult
+Compiling module xil_defaultlib.riscv_ex_stage
+Compiling module xil_defaultlib.riscv_load_store_unit
+Compiling module xil_defaultlib.riscv_cs_registers_default
+Compiling module xil_defaultlib.riscv_debug_unit
+Compiling module xil_defaultlib.riscv_core(INSTR_RDATA_WIDTH=128...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.instr_bram
+Compiling module xil_defaultlib.dp_ram(ADDR_WIDTH=18)
+Compiling module xil_defaultlib.ram(ADDR_WIDTH=18)
+Compiling module xil_defaultlib.gemm_controller
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.matrix_a_bram
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.matrix_b_bram
+Compiling module xil_defaultlib.LOD(N=2)
+Compiling module xil_defaultlib.LOD(N=4)
+Compiling module xil_defaultlib.LOD(N=8)
+Compiling module xil_defaultlib.LOD(N=16)
+Compiling module xil_defaultlib.LOD_N(N=16)
+Compiling module xil_defaultlib.DSR_left_N_S(S=32'b0100)
+Compiling module xil_defaultlib.data_extract_v1_default
+Compiling module xil_defaultlib.add_N_Cin(N=32'b0111)
+Compiling module xil_defaultlib.sub_N_in(N=32'b01000)
+Compiling module xil_defaultlib.sub_N(N=32'b01000)
+Compiling module xil_defaultlib.add_N_in(N=29)
+Compiling module xil_defaultlib.add_N(N=29)
+Compiling module xil_defaultlib.sub_N_in(N=29)
+Compiling module xil_defaultlib.sub_N(N=29)
+Compiling module xil_defaultlib.add_sub_N(N=29)
+Compiling module xil_defaultlib.LOD(N=32'sb010)
+Compiling module xil_defaultlib.LOD(N=32'sb0100)
+Compiling module xil_defaultlib.LOD(N=32'sb01000)
+Compiling module xil_defaultlib.LOD(N=32'sb010000)
+Compiling module xil_defaultlib.LOD(N=32'sb0100000)
+Compiling module xil_defaultlib.LOD(N=29)
+Compiling module xil_defaultlib.LOD_N(N=29)
+Compiling module xil_defaultlib.DSR_left_N_S(N=29,S=32'b0100)
+Compiling module xil_defaultlib.add_1(N=32'b01000)
+Compiling module xil_defaultlib.conv_2c(N=32'b0110)
+Compiling module xil_defaultlib.reg_exp_op(Bs=32'b0100)
+Compiling module xil_defaultlib.DSR_right_N_S(N=51,S=32'b0101)
+Compiling module xil_defaultlib.add_N_in
+Compiling module xil_defaultlib.add_N
+Compiling module xil_defaultlib.posit_mult(N=16)
+Compiling module xil_defaultlib.posit_mac
+Compiling module xil_defaultlib.gemm_top
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

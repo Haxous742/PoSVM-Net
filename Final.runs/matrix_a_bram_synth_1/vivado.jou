@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jun 11 11:46:45 2026
+# Process ID: 2724240
+# Current directory: /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/matrix_a_bram_synth_1
+# Command line: vivado -log matrix_a_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source matrix_a_bram.tcl
+# Log file: /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/matrix_a_bram_synth_1/matrix_a_bram.vds
+# Journal file: /home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.runs/matrix_a_bram_synth_1/vivado.jou
+# Running On: ihs06, OS: Linux, CPU Frequency: 5488.857 MHz, CPU Physical cores: 32, Host memory: 32738 MB
+#-----------------------------------------------------------
+source matrix_a_bram.tcl -notrace

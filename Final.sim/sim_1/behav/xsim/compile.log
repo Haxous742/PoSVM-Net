@@ -1,0 +1,85 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_b_bram/sim/matrix_b_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_b_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/matrix_a_bram/sim/matrix_a_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_a_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.gen/sources_1/ip/instr_bram/sim/instr_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_defines.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_alu
+INFO: [VRFC 10-311] analyzing module alu_ff
+INFO: [VRFC 10-311] analyzing module alu_popcnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/alu_div.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_alu_div
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/cluster_clock_gating.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cluster_clock_gating
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/compressed_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_compressed_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/cs_registers.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_cs_registers
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/debug_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_debug_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/dp_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dp_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/ex_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_ex_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/exc_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_exc_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gemm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/gemm_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gemm_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_hwloop_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/hwloop_regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_hwloop_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_id_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/if_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_if_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/load_store_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_load_store_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/mult.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_L0_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_prefetch_L0_buffer
+INFO: [VRFC 10-311] analyzing module prefetch_L0_buffer_L0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/prefetch_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_fetch_fifo
+INFO: [VRFC 10-311] analyzing module riscv_prefetch_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/register_file_ff.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/riscv_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module systolic_array
+INFO: [VRFC 10-311] analyzing module PE_new
+WARNING: [VRFC 10-3248] data object 'start' is already declared [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:80]
+WARNING: [VRFC 10-9364] second declaration of 'start' is ignored [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:80]
+INFO: [VRFC 10-311] analyzing module posit_mac
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'in1' is not allowed [/home/ihs06/cnn_svm_hybrid/Reference_data/gemm/systolic_array.sv:164]
+INFO: [VRFC 10-311] analyzing module posit_mult
+INFO: [VRFC 10-311] analyzing module data_extract_v1
+INFO: [VRFC 10-311] analyzing module sub_N
+INFO: [VRFC 10-311] analyzing module add_N
+INFO: [VRFC 10-311] analyzing module add_N_Cin
+INFO: [VRFC 10-311] analyzing module sub_N_in
+INFO: [VRFC 10-311] analyzing module add_N_in
+INFO: [VRFC 10-311] analyzing module add_sub_N
+INFO: [VRFC 10-311] analyzing module add_1
+INFO: [VRFC 10-311] analyzing module conv_2c
+INFO: [VRFC 10-311] analyzing module reg_exp_op
+INFO: [VRFC 10-311] analyzing module DSR_left_N_S
+INFO: [VRFC 10-311] analyzing module DSR_right_N_S
+INFO: [VRFC 10-311] analyzing module LOD_N
+INFO: [VRFC 10-311] analyzing module LOD
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Reference_data/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/sim_1/new/tb_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

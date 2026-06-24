@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="riscv_defines" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="700.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,382.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="169"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject type="array" fp_name="/tb_top/uut/riscv_core_i/instr_addr_o">
+      <obj_property name="ElementShortName">instr_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_addr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/uut/riscv_core_i/instr_rdata_i">
+      <obj_property name="ElementShortName">instr_rdata_i[127:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_rdata_i[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/uut/riscv_core_i/id_stage_i/gemm_stall">
+      <obj_property name="ElementShortName">gemm_stall</obj_property>
+      <obj_property name="ObjectShortName">gemm_stall</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/uut/riscv_core_i/id_stage_i/is_gemm_start">
+      <obj_property name="ElementShortName">is_gemm_start</obj_property>
+      <obj_property name="ObjectShortName">is_gemm_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_top/uut/riscv_core_i/id_stage_i/gemm_start_o">
+      <obj_property name="ElementShortName">gemm_start_o</obj_property>
+      <obj_property name="ObjectShortName">gemm_start_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/uut/gemm_top_i/u_controller/state_q">
+      <obj_property name="ElementShortName">state_q[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state_q[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/uut/gemm_top_i/u_controller/counter_q">
+      <obj_property name="ElementShortName">counter_q[15:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_q[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_top/uut/gemm_predicted_class_o">
+      <obj_property name="ElementShortName">gemm_predicted_class_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">gemm_predicted_class_o[3:0]</obj_property>
+   </wvobject>
+</wave_config>

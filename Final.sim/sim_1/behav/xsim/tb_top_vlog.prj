@@ -1,0 +1,41 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Final.gen/sources_1/ip/matrix_b_bram/sim/matrix_b_bram.v" \
+"../../../../Final.gen/sources_1/ip/matrix_a_bram/sim/matrix_a_bram.v" \
+"../../../../Final.gen/sources_1/ip/instr_bram/sim/instr_bram.v" \
+
+sv xil_defaultlib  \
+"../../../../../../Reference_data/riscv_defines.sv" \
+"../../../../../../Reference_data/alu.sv" \
+"../../../../../../Reference_data/alu_div.sv" \
+"../../../../../../Reference_data/cluster_clock_gating.sv" \
+"../../../../../../Reference_data/compressed_decoder.sv" \
+"../../../../../../Reference_data/controller.sv" \
+"../../../../../../Reference_data/cs_registers.sv" \
+"../../../../../../Reference_data/debug_unit.sv" \
+"../../../../../../Reference_data/decoder.sv" \
+"../../../../../../Reference_data/dp_ram.sv" \
+"../../../../../../Reference_data/ex_stage.sv" \
+"../../../../../../Reference_data/exc_controller.sv" \
+"../../../../../../Reference_data/gemm/gemm_controller.sv" \
+"../../../../../../Reference_data/gemm/gemm_top.sv" \
+"../../../../../../Reference_data/hwloop_controller.sv" \
+"../../../../../../Reference_data/hwloop_regs.sv" \
+"../../../../../../Reference_data/id_stage.sv" \
+"../../../../../../Reference_data/if_stage.sv" \
+"../../../../../../Reference_data/load_store_unit.sv" \
+"../../../../../../Reference_data/mult.sv" \
+"../../../../../../Reference_data/prefetch_L0_buffer.sv" \
+"../../../../../../Reference_data/prefetch_buffer.sv" \
+"../../../../../../Reference_data/ram.sv" \
+"../../../../../../Reference_data/register_file_ff.sv" \
+"../../../../../../Reference_data/riscv_core.sv" \
+"../../../../../../Reference_data/gemm/systolic_array.sv" \
+"../../../../../../Reference_data/top.sv" \
+"../../../../Final.srcs/sim_1/new/tb_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

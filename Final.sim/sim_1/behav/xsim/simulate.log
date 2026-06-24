@@ -1,0 +1,47 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.uut.u_instr_mem.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.uut.gemm_top_i.u_matrix_a.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.uut.gemm_top_i.u_matrix_b.inst.\native_mem_module.blk_mem_gen_v8_4_6_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Checking instruction BRAM at word 0: 0000000000000000000000000000a001
+WARNING: 615ns : Multiple conditions true
+	 condition at line:346 conflicts with condtion at line:201
+	 for unique case from File:/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:195
+DEBUG BRAM | Class:  0 | a0 (8-bit): ba | b0 (8-bit): 15
+DEBUG BRAM | Class:  0 | a0 (8-bit): 18 | b0 (8-bit): f1
+DEBUG BRAM | Class:  0 | a0 (8-bit): 39 | b0 (8-bit): 21
+--- RAW HARDWARE SCORES ---
+SCORE 0: 48c0
+SCORE 1: 4b75
+SCORE 2: bf11
+SCORE 3: 4972
+SCORE 4: 4b4d
+SCORE 5: 4694
+SCORE 6: 3f88
+SCORE 7: 59ec
+SCORE 8: 5060
+SCORE 9: 4791
+---------------------------
+WARNING: 137265ns : Multiple conditions true
+	 condition at line:346 conflicts with condtion at line:201
+	 for unique case from File:/home/ihs06/cnn_svm_hybrid/Reference_data/decoder.sv:195
+========================================
+ [TARGET REACHED] HARDWARE PREDICTION: 7
+========================================
+
+Time: 141755 ns Started: 141755 ns Scope: /tb_top/uut/riscv_core_i/id_stage_i File: /home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv Line:1242
+Branch decision is X
+
+Time: 143085 ns Started: 143085 ns Scope: /tb_top/uut/riscv_core_i/id_stage_i File: /home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv Line:1242
+Branch decision is X
+
+Time: 143115 ns Started: 143115 ns Scope: /tb_top/uut/riscv_core_i/id_stage_i File: /home/ihs06/cnn_svm_hybrid/Reference_data/id_stage.sv Line:1242
+Branch decision is X
+ [SIMULATION END] Software signaled completion.
+ Total Simulation Time: 143315000 ns
+$finish called at time : 143315 ns : File "/home/ihs06/cnn_svm_hybrid/Vivado/Final/Final.srcs/sim_1/new/tb_top.sv" Line 80
